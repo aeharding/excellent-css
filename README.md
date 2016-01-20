@@ -1,8 +1,11 @@
 # Presentation outline
 
+* "CSS is hard!" vs "CSS is easy!"
 * `<div>` soup
 * CSS box model
 * BEM
+  * CSS overrides
+  * !important
 * EMs and REMs
 * normalize.css
 * CSS libraries vs Sass libraries (Bourbon/Neat/Bitters/Refills vs Bootstrap)
