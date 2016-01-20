@@ -17,3 +17,7 @@
   * Linting (scss-lint, sass-lint)
   * Pixel-perfect regression testing
 * Polishing
+* Animations
+  * Stop using Javascript (jQuery)
+  * Where JS is needed, use it to control CSS events
+* Falling back
