@@ -12,6 +12,7 @@
 * Actually, let's just make that a topic: BOOTSTRAP
 * CSS pre/post processors
   * Sass
+    * @extend, @mixin, variables
 * Testing
   * Linting (scss-lint, sass-lint)
   * Pixel-perfect regression testing
