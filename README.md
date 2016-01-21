@@ -7,13 +7,13 @@
   * CSS overrides
   * !important
 * EMs and REMs
-* normalize.css
+* normalize.css (Know your reset)
 * CSS libraries vs Sass libraries (Bourbon/Neat/Bitters/Refills vs Bootstrap)
 * Actually, let's just make that a topic: BOOTSTRAP
 * CSS pre/post processors
   * Sass
-    * @extend, @mixin, variables
-* Testing
+    * @extend w/ placeholders, @mixin, variables
+* Proactive testing
   * Linting (scss-lint, sass-lint)
   * Pixel-perfect regression testing
 * Polishing
@@ -21,3 +21,7 @@
   * Stop using Javascript (jQuery)
   * Where JS is needed, use it to control CSS events
 * Falling back
+
+## Stuff to research
+ * inuitcss
+ * 
