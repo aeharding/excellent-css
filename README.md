@@ -1,13 +1,19 @@
+# Run
+```
+npm install -g reveal-md
+reveal-md slides.md
+```
+
 # Presentation outline
 
 * "CSS is hard!" vs "CSS is easy!"
-* `<div>` soup
+* normalize.css (Know your reset)
 * CSS box model
+* `<div>` soup
 * BEM
   * CSS overrides
   * !important
 * EMs and REMs
-* normalize.css (Know your reset)
 * CSS libraries vs Sass libraries (Bourbon/Neat/Bitters/Refills vs Bootstrap)
 * Actually, let's just make that a topic: BOOTSTRAP
 * CSS pre/post processors
