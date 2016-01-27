@@ -2,6 +2,8 @@
 
 #### Alexander Harding
 
+[github.com/aeharding/excellent-css](https://github.com/aeharding/excellent-css)
+
 ---
 
 ## "CSS is easy" (?)
@@ -79,6 +81,55 @@ html {
 ---
 
 ![box model](widthbox.png)
+
+---
+
+```html
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+          <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-9">
+            Level 1: .col-sm-9
+            <div class="row">
+              <div class="col-xs-8 col-sm-6">
+                Level 2: .col-xs-8 .col-sm-6
+              </div>
+              <div class="col-xs-4 col-sm-6">
+                Level 2: .col-xs-4 .col-sm-6
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+```
+
+---
+
+![myeyes.gif](myeyes.gif)
 
 ---
 
@@ -290,6 +341,10 @@ Set your own breakpoints, gutter size, etc.
 
 ---
 
+![adventuretime.gif](adventuretime.gif)
+
+---
+
 # Linting
 
 Everyone ~~is~~ <sup>should be</sup> doing it.
@@ -316,3 +371,65 @@ rules:
 [...]
 ```
 
+---
+
+# Pixel perfect tests
+
+![pp.png](pp.png)
+
+---
+
+# PP tests (con't)
+
+ * It's unmaintainable, shitty, and your only option
+ * PhantomCSS vs WebdriverCSS
+
+| WebdriverCSS    | PhantomCSS      |
+|-----------------|-----------------|
+| Slow            | Fast-ish        |
+| All devices     | Webkit          |
+| Buggy           | Very buggy      |
+
+```js
+phantomcss.screenshot("#feedback-form");
+```
+
+---
+
+![githubphantomcss.png](githubphantomcss.png)
+
+---
+
+# Animations
+
+Don't use jQuery for animations
+
+ * CSS fallback
+ * "We're not in 2008 anymore"
+   * Brute forcing the DOM
+ * Animating to dynamic heights
+ * [CSS3 Animation Events spec](https://www.w3.org/TR/css3-animations/#animation-events)
+   * Use [ngAnimate](https://docs.angularjs.org/api/ngAnimate), [React Animation](https://facebook.github.io/react/docs/animation.html), etc.
+
+---
+
+```css
+/* The starting CSS styles for the enter animation */
+.jht-page--fade-in.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.jht-page--fade-in.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+```
+
+---
+
+# k thx
+
+[github.com/aeharding/excellent-css](https://github.com/aeharding/excellent-css)
+
+![htp.gif](htp.gif)

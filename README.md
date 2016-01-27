@@ -1,4 +1,9 @@
-# Run
+# Read
+
+[Read the slides](slides.md)
+
+# Run the actual presentation
+
 ```
 npm install -g reveal-md
 reveal-md slides.md
