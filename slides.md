@@ -131,11 +131,14 @@ html {
 
 ![myeyes.gif](myeyes.gif)
 
+divdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdiv
+.generic-class-name.generic-class-name.generic-class-name.generic-class-name.generic-class-name
+
 ---
 
 ## No big library
 
-Touch CSS? => No Bootstrap
+Touch CSS? => ~~Bootstrap~~
 
  * Specificity war
  * Upgrading / removal
@@ -147,11 +150,16 @@ Reasons you use bootstrap:
 
 ---
 
+![business.jpg](business.jpg)
+
+---
+
 ## When building
 
  * EMs, REMs
  * BEM
  * Many files
+ * Remove whitespace
 
 ---
 
@@ -254,6 +262,36 @@ html {
 ```
 
 (Remember to setup `includePaths`.)
+
+---
+
+## Remove whitespace
+
+(Or have a plan!)
+
+```html
+<ol>
+  <li>boom</li>
+  <li>boom 2</li>
+</ol>
+```
+
+```html
+<ol>
+  <li>boom
+  </li><li>boom 2</li>
+</ol>
+```
+
+```css
+li {
+  float: left;
+}
+```
+
+[[pen]](http://codepen.io/anon/pen/bEMVaJ)
+
+or `grunt-htmlclean`!
 
 ---
 
